@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title></title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			margin: 0px;
+			
+		}
+		.d1{
+			
+			border: 1px solid black;
+			//margin-top: 0px;
+
+		}
+	
+		.menu{
+			
+			/*border: 1px solid red;*/
+			padding-top: 20px;
+			position: fixed;
+			padding-bottom: 20px;
+			//width: 100%;
+			background-color: white;
+			width: 100%;
+			z-index: 13;
+
+		}
+		.menu .h1{
+			//margin-left: 40%;
+		}
+		.searchdiv{
+			margin-left: 20%;
+			margin-right: 2%;
+		}
+		
+		.search{
+			border-color: green;
+			width: 130%;
+			height: 110%;
+			font-size: 110%;
+			letter-spacing: 1px;
+			border: 1px solid gray;
+		}
+		.navbar{
+			
+			display: flex;
+			flex-wrap: wrap;
+			position: fixed;
+			//width: 100%;
+			background-color: white;
+			//margin-top: 80px;
+			box-shadow: 4px 0px 7px black;
+			z-index: 12;
+			width: 100%;
+			margin-top: 75px;
+			
+			
+
+		}
+		.links{
+			text-decoration: none;
+			
+			color: black;
+			margin-left: 10%;
+			font-weight: bold;
+			padding: 2% 1%;
+			font-family: Arial Narrow;
+			transition: 0.5s;
+
+		}
+
+		.links:hover{
+			color: orange;
+			
+		}
+
+		.images{
+			
+			height: 500px;
+			width: 500px;
+			margin-top: 150px;
+			background-color: #fcf5df;
+			background-size: 500px 500px;
+			background-image: url(https://www.johnniewalker.com/media/1571/01-johnnie-walker-blue-label.png?quality=75&format=webp&width=1920&upscale=false);
+			background-repeat: no-repeat;
+
+		}
+		.bott{
+			width: 900px;
+			background-color: #fcf5df;
+		}
+		#about:hover{
+			background-color: #f6be00;
+
+		}
+		#about{
+			
+			background-color: #fcf5df;
+			width: 230px;
+			padding: 15px 10px;
+			font-size: 16px;
+			font-weight: bold;
+			position: absolute;
+			top: 450px;	
+		}
+		.a1{
+			text-decoration: none;
+			color: black;
+			transition: 1s;
+			
+
+		}
+		.a1:hover{
+			color:white;
+		}
+
+		.h2{
+			font-size: 22px;
+		}
+		.p1{
+			font-size: 19px;
+		}
+		#img1{
+			transition: 1s;
+			width: 420px;
+		}
+		#img1:hover{
+				transform: scale(1.2);
+		}
+		.p2{
+			font-size: 15px;
+			font-weight: bold;
+			padding-bottom: 40px;
+		}
+		.a2{
+			background-color: #f6be00;
+			text-decoration: none;
+			color: #FCF5E1;
+			font-weight: bold;
+			font-family: sans-serif;
+			padding: 17px 10px;
+		}	
+		.d3{
+			margin-top: 80px;
+			font-family: sans-serif;
+		}
+		.a3{
+			background-color: #f6be00;
+			text-decoration: none;
+			color: #FCF5E1;
+			font-family: sans-serif;
+			padding: 17px 10px;
+		}
+		.img3{
+			margin-top: 60px;
+		}
+		.d4{
+			//border: 1px solid black;
+			height: 230px;
+			width: 100%;
+			background-color: orange;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+		#h4{
+			color: #FCF5E1;
+			font-size: 50px;
+			font-family: sans-serif;
+		}
+		.d5{
+			height: 200px;
+			width: 600px;
+			margin-left: 150px;
+			margin-top: 16px;
+		}
+		.d6{
+			margin-top:105px; 
+			font-family: sans-serif;
+		}
+		#a6{
+			text-decoration: none;
+			color: white;
+			background-color: black;
+			font-weight: bold;
+			text-align: center;
+			padding: 35px 200px;
+		}
+		.d7{
+			//border: 2px solid black;
+			height: 900px;
+			width: 100%;
+			background-color: #FF7F27;
+			padding-top: 10px;
+
+		}
+		.l2{
+			text-decoration: none;
+			color: white;
+			font-family: sans-serif;
+			flex-wrap: wrap;
+            margin: 40px 0px 20px 40px ; 
+			font-size: 15px;
+			font-weight: bold;
+			padding: 5px;	
+		}
+		.d8{
+			margin-top: 50px;
+		}
+		.d9{
+			height: 100px;
+			width: 400px;
+			padding-top: 45px;
+		}
+		.a9{
+			text-decoration: none;
+			color: white;
+			font-family: sans-serif;
+			flex-wrap: wrap;
+            margin: 40px 0px 20px 40px;
+            font-weight: bold;	
+		}
+		.d10{
+			//border: 2px solid black;
+			height: 110px;
+			width: 950px;
+			padding-top: 40px;
+		}
+		.a10{
+			text-decoration: none;
+			color: white;
+			font-family: sans-serif;
+			flex-wrap: wrap;
+            padding: 4px;
+            font-weight: bold;
+           //border: 1px solid black;
+           }
+           .d11{
+           //border: 1px solid black;
+           	height: 350px;
+           	width: 970px;
+           	color: #FCF5E1;
+			font-family: sans-serif;
+			flex-wrap: wrap;
+            padding: 4px;
+            font-weight: bold;
+           }
+           .blue1{
+           	background-color: lightblue;
+           }
+           .you1{
+           	border: 1px solid black;
+           	height: 200px;
+           }
+           .d9 i{
+           	font-size: 30px;
+           	transition:0.5s;
+
+           }
+           .twi:hover{
+           	color: skyblue;
+           }
+           .you:hover{
+           	color: red;
+           }
+           .fac:hover{
+           	color: blue;
+           }
+           .insta:hover{
+           	color: magenta;
+           }
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<div class="h1"><center>
+			<h1 >BENIWAL WALKER</h1></center>
+		</div>
+		
+	</div>
+	<div class="navbar">
+		<a class="links" href="https://www.johnniewalker.com/en-in/our-whisky/">OUR WHISKY</a>
+		<a class="links" href="https://www.johnniewalker.com/en-in/whisky-knowledge/">WHISKY KNOWLEDGE</a>
+		<a class="links" href="https://www.johnniewalker.com/en-in/the-world-of-johnnie-walker/">THE WORLD OF BENIWAL WALKER</a>
+		<a class="links" href="https://www.johnniewalker.com/en-in/?scroll=walkwithus">NEWSLETTER</a>
+	</div>
+	<!-- <div class="d1">
+	<div class="h1">
+		<h1>BENIWAL WALKER</h1>
+		<input class="search" placeholder="Search serves and Whiskies" type="search" name="">
+	</div>
+</div>
+	
+
+	<div class="navbar">
+		<a class="links" id="link1" href="https://www.johnniewalker.com/en-in/our-whisky/">OUR WHISKY</a>
+		<a class="links" href="https://www.johnniewalker.com/en-in/whisky-knowledge/">WHISKY KNOWLEDGE</a>
+		<a class="links" href="https://www.johnniewalker.com/en-in/the-world-of-johnnie-walker/">THE WORLD OF BENIWAL WALKER</a>
+		<a class="links" href="https://www.johnniewalker.com/en-in/?scroll=walkwithus">NEWSLETTER</a>
+	</div> -->
+<hr> 
+    <center>
+    	<div class="blue1">
+    	<div class="bott">
+	<div class="images">
+		<div id="about">
+		<a class="a1" href="https://www.johnniewalker.com/en-in/our-whisky/johnnie-walker-colours/double-black/">MORE ABOUT BENIWAL WALKER BLUE LABEL  <SUP>TM</SUP> </a> 
+		</div>
+		
+	</div>
+</div>
+
+   <div class="h2">
+   	<h1 style="font-family: sans-serif;">EXPLORE OUR WHISKY</h1>
+   	<p class="p1">Our range of classic blends. Pioneering, iconic, exceptional.</p>
+   	<img id="img1" src="https://www.johnniewalker.com/media/1870/range_colours.png?quality=75&format=webp&width=420&upscale=false">
+   	<p class="p2">BENIWAL WALKER COLOURS</p>
+   	<a class="a2" href="https://www.johnniewalker.com/en-in/our-whisky/"> MORE ABOUT OUR WHISKY </a>
+   </div>
+
+   <div class="d3">
+   	<h1 style="font-size: 53px">OUR HERITAGE</h1>
+   	<p>Follow the Johnnie Walker Story, from the four corners of Scotland to the four corners of the world.</p>
+   	<img src="https://www.johnniewalker.com/media/1325/old-picture-of-first-john-walker-shop.jpg?quality=75&format=webp&width=420&upscale=false"><br><br><br>
+   	<a class="a3" href="https://www.johnniewalker.com/en-in/whisky-knowledge/the-history-of-whisky/"><b>MORE ABOUT OUR HERTAGE</b></a><br><br>
+   	<img class="img3" src="https://www.johnniewalker.com/media/3866/royal-warrant-logo.png?quality=75&format=webp&width=200&upscale=false"><br><br><br>
+   </div>
+	</center>
+
+	<div class="d4">
+		<div class="d5">
+		<h1 id="h4">WALK WITH US</h1>
+		<p>We're here whenever you're ready to take the plunge with Johnnie Walker and discover cocktail recipes, new product launches and the latest from our world of whisky.</p>
+		</div>
+		<div class="d6">
+			<a id="a6" href="https://www.johnniewalker.com/#"> START YOUR JOURNEY </a>
+		</div>
+	</div>
+    </div>
+    <center>
+	<div class="d7">
+		<div class="d8">
+		<a class="l2" href="http://www.drinkiq.com/">RESPONSIBLE DRINKING</a>
+		<a class="l2" href="https://www.johnniewalker.com/en-in/contact-us/">CONTACT US</a>
+		<a class="l2" href="https://www.johnniewalker.com/en-in/locations/">CHANGE LOCATION</a>
+		</div>
+		<div class="d9">
+
+			<a class="a9" href="https://twitter.com/johnniewalker_"> <i class="fa-brands fa-twitter twi"></i></a>
+			<a class="a9" href="https://www.youtube.com/user/johnniewalkerwhisky"><i class="fa-brands fa-youtube you"></i></a>
+			<a class="a9" href="https://www.facebook.com/johnniewalker"><i class="fa-brands fa-facebook fac"></i></a>
+			<a class="a9" href="https://www.instagram.com/johnniewalker/"><i class="fa-brands fa-instagram insta"></i></a>
+		</div>
+		<div>
+			<img src="https://www.johnniewalker.com/media/1477/logo-white.png?quality=75&format=webp&width=150&upscale=false">
+		</div>
+		<div class="d10">
+			<a class="a10" href="https://footer.diageohorizon.com/dfs/assets/www.johnniewalker.com/TnC_en.html?locale=en-in">CONDITIONS OF USE</a>
+			<a class="a10" href="https://www.diageoprivacycentre.com/en-in?pp=https://footer.diageohorizon.com/dfs/assets/www.johnniewalker.com/PrivacyPolicy_en.html?locale=en-in">DIAGEO PRIVACY CENTRE</a>
+			<a class="a10" href="https://footer.diageohorizon.com/dfs/assets/www.johnniewalker.com/UGC_en.html?locale=en-in">UGC POLICY</a>
+			<a class="a10" href="https://footer.diageohorizon.com/dfs/assets/www.johnniewalker.com/www.johnniewalker.com_en-in_final_accessibility.html">ACCESSIBILITY STATEMENT</a>
+			<a class="a10" href="javascript:void(0);">PRIVACY SETTINGS</a><br><br>
+			<a class="a10" href="https://footer.diageohorizon.com/dfs/assets/www.johnniewalker.com/PrivacyPolicy_en.html?locale=en-in">PRIVACY AND COOKIE NOTICE</a>
+			<a class="a10" href="http://drinkaware.co.uk/">DRINKAWARE.CO.UK</a>
+			<a class="a10" href="http://www.drinkiq.com/">DRINKIQ</a>
+			<a class="a10" href="http://thebar.com/?agp=true">THEBAR.COM</a>
+		</div>
+		<div class="d11">
+		THE JOHNNIE WALKER, JOHNNIE WALKER HOUSE, JOHN WALKER & SONS, RED LABEL, BLACK LABEL, DOUBLE BLACK,<br><br> GOLD LABEL RESERVE, PLATINUM LABEL, BLUE LABEL, XR, KING GEORGE V, JOHN WALKER & SONS ODYSSEY, THE<br><br> JOHN WALKER, DIAMOND JUBILEE, THE ADVENTURER, THE SPICE ROAD, THE GOLD ROUTE AND THE ROYAL ROUTE<br><br> WORDS, THE STRIDING FIGURE DEVICE AND ASSOCIATED LOGOS, JOY WILL TAKE YOU FURTHER ARE TRADEMARKS.<br><br> © JOHN WALKER & SONS 2015. THE EXPLORERS CLUB FLAG AND ASSOCIATED LOGOS ARE TRADEMARKS OF THE<br><br> EXPLORERS CLUB, A GLOBAL NON-PROFIT ORGANIZATION HEADQUARTERED IN NEW YORK CITY."" JOHN WALKER &<br><br> SONS 2016<br><br><br><br>
+
+		PLEASE DO NOT SHARE WITH ANYONE UNDER THE LEGAL PURCHASE AGE FOR ALCOHOL.DRINK RESPONSIBLY.
+
+	</div><br><br><br><br>
+	<hr>
+	</div>
+
+	
+    </center>
+    
+</div>
+</body>
+</html>
